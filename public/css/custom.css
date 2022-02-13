@@ -1,0 +1,18 @@
+/* Write your custom CSS here */
+.Time{
+	margin:100px auto auto !important;
+	right:0;
+	left:0;
+	top:50;
+	color:teal;
+	font-size:18px;
+}
+.inner-sidebar{
+	position:fixed;
+	right:0;
+	bottom:0;
+	height:100%;
+}
+.instructions{
+	margin-top:100px;
+}

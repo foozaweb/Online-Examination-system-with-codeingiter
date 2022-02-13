@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery Clock Plugin</title>
+
+<meta name="title" content="jQuery Clock Plugin" />
+<meta name="keywords" content="javascript, jquery plugin, clock, digital, analog, css3" />
+<meta name="description" content="jquery clock plugin is just another clock plugin for jquery" />
+<meta name="author" content="Joaquín Núñez http://joaquinnunez.cl/blog/" />
+<meta name="robots" content="follow,index" />
+
+<link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/analog.css"> 
+<link rel="stylesheet" type="text/css" href="css/digital.css">
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.clock.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+ $(document).ready(function() {
+   $('#analog-clock').clock({offset: '+5', type: 'analog'});
+   $('#digital-clock').clock({offset: '0', type: 'digital'});
+ });
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+});
+</script>
+
+<style>
+<!--
+
+body {
+font-size:12px;
+}
+
+table.api {
+border-collapse:collapse;
+border-spacing:0;
+width:100%;
+}
+
+table.api tbody tr.option {
+background: #E2EDF4 none repeat scroll 0 0;
+padding:4px;
+}
+
+table.api tbody tr.option td {
+padding:4px;
+}
+
+table.api tbody tr.example td div.example div.tabs-container pre {
+background:#F5F4EE none repeat scroll 0 0 !important;
+border:1px dotted #DDDDDD !important;
+color:#06263C !important;
+font-size:11px !important;
+line-height:1.6 !important;
+margin:0.8em 0 1.2em !important;
+padding:5px !important;
+}
+
+table.api tbody tr.example td div.example div.tabs-container {
+background:#FFFFFF none repeat scroll 0 0;
+border-top:1px solid #97A5B0;
+padding:1em 8px;
+}
+
+table.api tbody tr.example td div.example ul.tabs-nav {
+padding:1em 8px;
+}
+
+table.api tbody tr.example td div.example ul.tabs-nav li{
+border-left:1px solid #97A5B0;
+border-right:1px solid #97A5B0;
+border-top:1px solid #97A5B0;
+}
+
+table.api tbody tr td.desc {
+padding:1em 8px;
+}
+
+-->
+</style>
+
+</head>
+<body>
+<div id="main">
+	<div id="shadow">
+		<div id="content">
+			<ul>
+				<li><a href="#que_es">What is?</a></li>
+				<li><a href="#doc">Documentation</a></li>
+				<li><a href="#download">Download</a></li>
+				<li><a href="#demo_div">Demo</a></li>
+			</ul>
+			<br />
+			<div id="que_es" class="example">
+				<p>jquery clock plugin is just another clock plugin, it comes with an analog and digital options and another option to handle timezones, warning! the analog clock only works with css3</p>
+
+				<p>for the analog clock (and almost all the plugin) i'm using the code and images from this article of <a href="http://css-tricks.com/css3-clock/">css-tricks.com</a> </p>
+
+        <p>you can see this plugin completely in action in this <a href="http://eco.netvibes.com/widgets/381247/world-clock">netvibes world clock widget</a></p>
+
+			</div>
+			
+			
+			
+			<div id="doc" class="example">
+				<h2>Plug-in method</h2>
+				<br />
+				<h3> <strong class="selflink">clock</strong>( <span class="optional">[</span>options<span class="optional">]</span> ) </h3>
+				<p>
+          options (optional) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://docs.jquery.com/Types#Options">Options</a>
+        </p>		
+				<p style="background:#0F67A1 none repeat scroll 0 0;padding:5px 10px;color:#FFFFFF;">options</p>
+				
+<table class="api">
+	<tbody>
+
+    <tr class="option">
+      <th>offset</th>
+      <td class="type"><a href="http://docs.jquery.com/Types#String">String</a></td>
+      <td class="default"><b>Default:</b> <span>+0</span></td>
+    </tr>
+    <tr>
+      <td colspan="3" class="desc">The offset of your zone, in my country, Chile, is normally -4  &nbsp;&nbsp;&nbsp;&nbsp; =D</td>
+    </tr>
+
+    <tr class="option">
+      <th>type</th>
+      <td class="type"><a href="http://docs.jquery.com/Types#String">String</a></td>
+      <td class="default"><b>Default:</b> <span>'analog'</span></td>
+    </tr>
+    <tr>
+      <td colspan="3" class="desc">The types are analog and digital</td>
+    </tr>
+
+	</tbody>
+</table>
+
+
+
+				<div id="download" class="example">
+					<h2>Download</h2>
+					<p>
+						Require <a href="http://jquery.com/">jQuery 1.2.x or superior</a>.
+					</p>
+					<p>
+						<strong><a href="http://joaquinnunez.cl/jquery-clock-plugin/jquery.clock.plugin.tar.gz">Download jquery-clock</a></strong>
+					</p>
+				</div>
+				<div id="demo_div">
+					<div id="demo" class="example">
+						<h2>Demo 1</h2>
+						
+      <div style="text-align: center;">
+      <span class="title">An analog clock</span><br/>
+      <ul id="analog-clock" class="analog">	
+	   	  <li class="hour"></li>
+	     	<li class="min"></li>
+        <li class="sec"></li>
+        <li class="meridiem"></li>
+     	</ul>
+      </div>
+
+
+						<div class="code">
+							<h3>Código</h3>
+							<code>$('#analog-clock').clock({offset: '+5', type: 'analog'});</code>
+							<pre><code>&lt;ul id="analog-clock" class="analog"&gt;
+  &lt;li class="hour"&gt;&lt;/li&gt;
+  &lt;li class="min"&gt;&lt;/li&gt;
+  &lt;li class="sec"&gt;&lt;/li&gt;
+  &lt;li class="meridiem"&gt;&lt;/li&gt;
+&lt;/ul&gt;</code><pre>
+						</div>
+					</div>
+					<div id="demo" class="example">
+						<h2>Demo 2</h2>
+						
+      <div style="text-align: center;">
+      <span class="title">A digital clock</span><br/>
+      <ul id="digital-clock" class="digital">	
+	   	  <li class="hour"></li>
+	     	<li class="min"></li>
+        <li class="sec"></li>
+        <li class="meridiem"></li>
+     	</ul>
+      </div>
+
+
+						<div class="code">
+							<h3>Código</h3>
+							<code>$('#digital-clock').clock({offset: '0', type: 'digital'});</code>
+							<pre><code>&lt;ul id="digital-clock" class="digital"&gt;
+  &lt;li class="hour"&gt;&lt;/li&gt;
+  &lt;li class="min"&gt;&lt;/li&gt;
+  &lt;li class="sec"&gt;&lt;/li&gt;
+  &lt;li class="meridiem"&gt;&lt;/li&gt;
+&lt;/ul&gt;</code><pre>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p class="right">
+				<a href="http://joaquinnunez.cl/blog/contacto/">Contacto</a>
+			</p>
+			<ul>
+				<li>Copyleft 2010 <a href="http://joaquinnunez.cl/">José Joaquín Núñez</a></li>
+				<li><a href="http://www.opensource.org/licenses/gpl-2.0.php">Licencia GPL</a></li>
+			</ul>
+		</div>
+	</div>
+	</body>
+	</html>
