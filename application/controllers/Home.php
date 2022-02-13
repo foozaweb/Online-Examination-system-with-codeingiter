@@ -102,8 +102,8 @@ class Home extends CI_Controller {
 			$config['newline'] = "\r\n";
 			//$config['smtp_host'] = "smtp.mailgun.org";
 			$config['smtp_host'] = "smtp.mailgun.org";
-			$config['smtp_user'] = "postmaster@blwcampusministry.net";
-			$config['smtp_pass'] = "1c6531f5250d3051b3078a5ec1f2f4e9";
+			$config['smtp_user'] = "smtp@email.com";
+			$config['smtp_pass'] = "smtp_password";
 			$config['smtp_port'] = 587;
 			//$config['smtp_crypto'] = "tls";
 			//$config['send_multipart'] = FALSE;
@@ -214,8 +214,8 @@ public function password()
 			$config['newline'] = "\r\n";
 			//$config['smtp_host'] = "smtp.mailgun.org";
 			$config['smtp_host'] = "smtp.mailgun.org";
-			$config['smtp_user'] = "postmaster@blwcampusministry.net";
-			$config['smtp_pass'] = "1c6531f5250d3051b3078a5ec1f2f4e9";
+			$config['smtp_user'] = "smtp@email.com";
+			$config['smtp_pass'] = "smtp_password";
 			$config['smtp_port'] = 587;
 			//$config['smtp_crypto'] = "tls";
 			//$config['send_multipart'] = FALSE;
